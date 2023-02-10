@@ -44,7 +44,7 @@ export const Infos = styled.div`
             }
 
             &:focus {
-                border-color: blue;
+                border-color: #5061fc;
             }
 
             &::placeholder {
@@ -67,5 +67,5 @@ export const SpinnerContainer = styled.div`
 export const Title = styled.h1`
         text-align: center;
         font-size: 2.5rem;
-        color: orange;
+        color: #f6f5fc;
 `;

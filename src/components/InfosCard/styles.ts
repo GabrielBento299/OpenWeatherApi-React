@@ -32,6 +32,14 @@ export const CityTemp = styled.div`
 export const InfoTemp = styled.div`
         margin-bottom: 2rem;
 
+        span {
+            font-size: 1.5rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+        }
+
         svg {
             font-size: 2rem;
         }
