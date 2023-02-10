@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
         max-width: 800px;
-        width: 100%;
+        width: 95%;
         padding: 2rem;
         margin: 0 auto;
         color: #fff;
@@ -12,15 +12,19 @@ export const Container = styled.div`
         backdrop-filter: blur( 3.5px );
         -webkit-backdrop-filter: blur( 13.5px );
         border-radius: 15px;
+
+        @media screen and (max-width: 700px) {
+                backdrop-filter: none;
+        }
 `;
 
 export const Infos = styled.div`
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 100%;
         gap: .7rem;
         margin-bottom: 2rem;
+        height: 50px;
 
         input {
             width: 50%;
@@ -34,6 +38,10 @@ export const Infos = styled.div`
             outline: none;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.04);
             transition: border-color 0.2s ease-in;
+
+            @media screen and (max-width: 700px) {
+                width: 100%;
+            }
 
             &:focus {
                 border-color: blue;

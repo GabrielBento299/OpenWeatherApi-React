@@ -13,7 +13,6 @@ interface IProps {
 }
 
 export default function InfosCard({ wheathers } :IProps) {
-  console.log(wheathers);
   return (
     <div key={wheathers?.id}>
       <CityTemp>
@@ -29,8 +28,8 @@ export default function InfosCard({ wheathers } :IProps) {
       <InfoTemp>
         <span>Temperatura atual: </span>
         <h2>{Math.round(wheathers?.main.temp)} <TbTemperatureCelsius /></h2>
-        {wheathers?.main.temp >= 25 && <BsSun /> }
-        {wheathers?.main.temp <= 25 && <BsCloudy />}
+        {wheathers?.main.temp >= 25 && <BsSun color="yellow" /> }
+        {wheathers?.main.temp <= 25 && <BsCloudy color="#ccc" />}
       </InfoTemp>
       <Bottom>
         <div className="feels">

@@ -38,6 +38,7 @@ export default styled.div`
         color: blue;
         font-size: 5rem;
         margin-top: 2rem;
+        margin-bottom: 2rem;
         width: 1em;
         height: 1em;
         border-radius: 50%;

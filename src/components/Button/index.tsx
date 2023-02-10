@@ -6,9 +6,9 @@ import { ButtonStyled } from './styles';
 interface IProps {
   children: ReactNode;
   // eslint-disable-next-line react/require-default-props
-  type: 'button';
+  type: 'button' | 'submit';
   // eslint-disable-next-line react/require-default-props
-  onClick: () => void;
+  onClick?: () => void;
 }
 
 export default function Button({ children, type, onClick } : IProps) {
